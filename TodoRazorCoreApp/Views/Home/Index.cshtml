@@ -1,0 +1,31 @@
+﻿@model TodoRazorCoreDomain.Models.Task
+
+@{
+    ViewBag.Title = "Tasks";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tasks</title>
+</head>
+<body>
+    <div>
+        <h3>Tasks</h3>
+        <table>
+            @foreach (var b in ViewBag.Tasks)
+            {
+                <tr>
+                    <td><p>@b.Title</p></td>
+                    <td><p><a href="/Home/Update/@b">Update</a></p></td>
+                    <td><p><a href="/Home/Delete/@b.Id">Delete</a></p></td>
+                </tr>
+            }
+            <tr><td><p><a href="/Home/Create">Create</a></p></td></tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using TodoRazorCoreDomain.DTOs;
+using TodoRazorCoreDomain.Models;
+
+namespace TodoRazorCoreDomain.Helpers
+{
+    public class AutoMapper : IAutoMapper
+    {
+        public TaskDTO MapToDTO(Task task)
+        {
+            return new TaskDTO()
+            {
+                Id = task.Id,
+                Title = task.Title,
+                Description = task.Description,
+                StartDate = task.StartDate.ToString("g"),
+                EndDate = task.EndDate.ToString("g")
+            };
+        }
+
+        public TaskListDTO MapToListDTO(Task task)
+        {
+            return new TaskListDTO()
+            {
+                Id = task.Id,
+                Title = task.Title,
+                StartDate = task.StartDate.ToString("g"),
+                EndDate = task.EndDate.ToString("g")
+            };
+        }
+    }
+}

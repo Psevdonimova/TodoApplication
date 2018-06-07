@@ -1,0 +1,9 @@
+C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreDomain\bin\Debug\netcoreapp2.0\TodoRazorCoreDomain.deps.json
+C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreDomain\bin\Debug\netcoreapp2.0\TodoRazorCoreDomain.dll
+C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreDomain\bin\Debug\netcoreapp2.0\TodoRazorCoreDomain.pdb
+C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreDomain\obj\Debug\netcoreapp2.0\TodoRazorCoreDomain.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreDomain\obj\Debug\netcoreapp2.0\TodoRazorCoreDomain.AssemblyInfoInputs.cache
+C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreDomain\obj\Debug\netcoreapp2.0\TodoRazorCoreDomain.AssemblyInfo.cs
+C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreDomain\obj\Debug\netcoreapp2.0\TodoRazorCoreDomain.dll
+C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreDomain\obj\Debug\netcoreapp2.0\TodoRazorCoreDomain.pdb
+C:\Users\Пользователь\source\repos\ToDoRazorCoreApp\TodoRazorCoreDomain\obj\Debug\netcoreapp2.0\TodoRazorCoreDomain.csprojResolveAssemblyReference.cache
