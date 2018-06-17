@@ -1,4 +1,3 @@
-C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreApp\obj\Debug\netcoreapp2.0\TodoRazorCoreApp.csprojResolveAssemblyReference.cache
 C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreApp\obj\Debug\netcoreapp2.0\TodoRazorCoreApp.csproj.CoreCompileInputs.cache
 C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreApp\obj\Debug\netcoreapp2.0\TodoRazorCoreApp.AssemblyInfoInputs.cache
 C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreApp\obj\Debug\netcoreapp2.0\TodoRazorCoreApp.AssemblyInfo.cs
@@ -11,3 +10,5 @@ C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreApp
 C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreApp\obj\Debug\netcoreapp2.0\TodoRazorCoreApp.pdb
 C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreApp\bin\Debug\netcoreapp2.0\TodoRazorCoreDomain.dll
 C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreApp\bin\Debug\netcoreapp2.0\TodoRazorCoreDomain.pdb
+C:\Users\Пользователь\source\repos\ToDoRazorCoreApp\TodoRazorCoreApp\obj\Debug\netcoreapp2.0\TodoRazorCoreApp.csprojAssemblyReference.cache
+C:\Users\Пользователь\source\repos\ToDoRazorCoreApp\TodoRazorCoreApp\obj\Debug\netcoreapp2.0\TodoRazorCoreApp.csproj.CopyComplete

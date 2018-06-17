@@ -1,1 +1,88 @@
-﻿
+﻿@using TodoRazorCoreDomain.Models
+@model TodoRazorCoreDomain.Models.Task
+
+@{
+    ViewBag.Title = "Tasks";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tasks</title>
+    <style type="text/css">
+        #centerLayer {
+            margin-left: 45%;
+        }
+        #leftLayer {
+            margin-left: 35%;
+        }
+        #rightLayer {
+            float: right;
+            margin-right: 60%;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="centerLayer">Tasks</h3>
+    @using (Html.BeginForm())
+    {
+        @if (ViewBag.Tasks == null)
+        {
+            <p style="margin-left: 43%">Create your first task!</p>
+            <p id="centerLayer"><input type="button" value="Create" onclick="location.href = '@Url.Action("Create", "Home")'" /></p>
+        }
+        else
+        {
+            @foreach (var some_task in ViewBag.Tasks)
+            {
+                <p>
+                    <div id="leftLayer">
+                        @if (some_task.TaskStatus != Status.Completed && some_task.TaskStatus != Status.Cancelled)
+                        {
+                            @Html.ActionLink((string)some_task.Title, "Update", new { id = some_task.Id })
+                        }
+                        else
+                        {
+                            <a>@some_task.Title</a>
+                        }
+                        <label>@some_task.TaskStatus</label>
+                        <div id="rightLayer">
+                            @some_task.EndDate.ToShortDateString()
+
+                            @if (some_task.TaskStatus == Status.Todo)
+                            {
+
+                                <input type="button" value="Start" onclick="location.href = '@Url.Action("StartTask", "Home", new { id = some_task.Id })'" />
+                            }
+                            else if (some_task.TaskStatus == Status.Active)
+                            {
+                                <input type="button" value="Complete" onclick="location.href = '@Url.Action("CompleteTask", "Home", new { id = some_task.Id })'" />
+                            }
+                            @if (some_task.TaskStatus != Status.Completed && some_task.TaskStatus != Status.Cancelled)
+                            {
+                                <input type="button" value="Cancel" onclick="location.href = '@Url.Action("CancelTask", "Home", new { id = some_task.Id })'" />
+                            }
+                        </div>
+                    </div>
+                </p>
+            }
+            <p>
+                <div id="leftLayer">
+                    <input type="button" value="Create" onclick="location.href = '@Url.Action("Create", "Home")'" />
+                </div>
+            </p>
+            <p>
+                <div id="leftLayer">
+                    <input type="button" value="Previous" onclick="location.href = '@Url.Action("ChangePage", "Home", new {direction = -1})'" />
+                    <div id="rightLayer">
+                        <input type="button" value="Next" onclick="location.href = '@Url.Action("ChangePage", "Home", new { direction = 1 })'" />
+                    </div>
+                </div>
+            </p>
+        }
+    }
+</body>
+</html>

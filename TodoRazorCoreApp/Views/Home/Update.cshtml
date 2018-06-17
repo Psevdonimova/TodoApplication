@@ -1,0 +1,62 @@
+﻿@using TodoRazorCoreDomain.Models
+@model TodoRazorCoreDomain.Models.Task
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Update</title>
+    <style type="text/css">
+        #centerLayer {
+            margin-left: 40%;
+        }
+        #leftLayer {
+            margin-left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="centerLayer">Update Task @ViewBag.Task.Title (#@ViewBag.Task.Id)</h3>
+    <div id="leftLayer">
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+            <div>
+                <p>
+                    <label>Title:</label>
+                    @Html.TextBoxFor(x => x.Title, new { style = "width:141px" })
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label>Starts:</label>
+                    @Html.EditorFor(x => x.StartDate)
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label>Ends:</label>
+                    @Html.EditorFor(x => x.EndDate)
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label>Description:</label>
+                    @Html.TextAreaFor(x => x.Description, new { style = "width:139px" })
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label>Priority:</label>
+                    @Html.DropDownListFor(x => x.TaskPriority,
+                                  new SelectList(Enum.GetValues(typeof(Priority))))
+                </p>
+            </div>
+            <div>
+                <input type="submit" value="Save" />
+            </div>
+        }
+    </div>
+</body>
+</html>
