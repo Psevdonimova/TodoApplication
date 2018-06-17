@@ -6,4 +6,4 @@ C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreDom
 C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreDomain\obj\Debug\netcoreapp2.0\TodoRazorCoreDomain.AssemblyInfo.cs
 C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreDomain\obj\Debug\netcoreapp2.0\TodoRazorCoreDomain.dll
 C:\Users\Пользователь\source\repos\TodoRazorCoreApp\TodoRazorCoreDomain\obj\Debug\netcoreapp2.0\TodoRazorCoreDomain.pdb
-C:\Users\Пользователь\source\repos\ToDoRazorCoreApp\TodoRazorCoreDomain\obj\Debug\netcoreapp2.0\TodoRazorCoreDomain.csprojResolveAssemblyReference.cache
+C:\Users\Пользователь\source\repos\ToDoRazorCoreApp\TodoRazorCoreDomain\obj\Debug\netcoreapp2.0\TodoRazorCoreDomain.csprojAssemblyReference.cache

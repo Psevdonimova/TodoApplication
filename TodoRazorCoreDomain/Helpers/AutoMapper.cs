@@ -15,9 +15,11 @@ namespace TodoRazorCoreDomain.Helpers
                 Id = task.Id,
                 Title = task.Title,
                 Description = task.Description,
-                StartDate = task.StartDate.ToString("g"),
-                EndDate = task.EndDate.ToString("g")
-            };
+                StartDate = task.StartDate.Value.ToString("g"),
+                EndDate = task.EndDate.Value.ToString("g"),
+                TaskPriority = task.TaskPriority.Value,
+                TaskStatus = task.TaskStatus
+        };
         }
 
         public TaskListDTO MapToListDTO(Task task)
@@ -26,8 +28,10 @@ namespace TodoRazorCoreDomain.Helpers
             {
                 Id = task.Id,
                 Title = task.Title,
-                StartDate = task.StartDate.ToString("g"),
-                EndDate = task.EndDate.ToString("g")
+                StartDate = task.StartDate.Value.ToString("g"),
+                EndDate = task.EndDate.Value.ToString("g"),
+                TaskPriority = task.TaskPriority.Value,
+                TaskStatus = task.TaskStatus
             };
         }
     }

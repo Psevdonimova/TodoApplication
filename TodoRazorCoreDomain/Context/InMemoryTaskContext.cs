@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using TodoRazorCoreDomain.Models;
 
@@ -13,6 +14,7 @@ namespace TodoRazorCoreDomain.Context
         public IEnumerable<Task> GetRange(int take, int skip)
         {
             return taskList.GetRange(skip, take);
+            //return taskList.GetRange(skip, take).OrderBy(a => a.TaskPriority);
         }
         //returns one task filtered by given ID
         public Task Get(int id)
@@ -41,6 +43,8 @@ namespace TodoRazorCoreDomain.Context
             taskModel.Description = task.Description;
             taskModel.StartDate = task.StartDate;
             taskModel.EndDate = task.EndDate;
+            taskModel.TaskPriority = task.TaskPriority;
+            taskModel.TaskStatus = task.TaskStatus;
             return task.Id;
         }
     }
