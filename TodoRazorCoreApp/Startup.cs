@@ -24,6 +24,7 @@ namespace TodoRazorCoreApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<ITaskContext, InMemoryTaskContext>();
+            services.AddSingleton<IAutoMapper, AutoMapper>();
             services.AddMvc();
         }
 
